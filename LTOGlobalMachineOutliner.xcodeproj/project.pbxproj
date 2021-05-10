@@ -11,15 +11,19 @@
 		74B8C9F92649154B0028785B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8C9F82649154B0028785B /* ContentView.swift */; };
 		74B8C9FB2649154C0028785B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B8C9FA2649154C0028785B /* Assets.xcassets */; };
 		74B8C9FE2649154C0028785B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B8C9FD2649154C0028785B /* Preview Assets.xcassets */; };
+		BEC1D23CA49A38C597D2B1D0 /* libPods-LTOGlobalMachineOutliner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 513DA019927912A8662D1475 /* libPods-LTOGlobalMachineOutliner.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		354AED554208C06474309E14 /* Pods-LTOGlobalMachineOutliner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTOGlobalMachineOutliner.release.xcconfig"; path = "Target Support Files/Pods-LTOGlobalMachineOutliner/Pods-LTOGlobalMachineOutliner.release.xcconfig"; sourceTree = "<group>"; };
+		513DA019927912A8662D1475 /* libPods-LTOGlobalMachineOutliner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LTOGlobalMachineOutliner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B8C9F32649154B0028785B /* LTOGlobalMachineOutliner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTOGlobalMachineOutliner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B8C9F62649154B0028785B /* LTOGlobalMachineOutlinerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTOGlobalMachineOutlinerApp.swift; sourceTree = "<group>"; };
 		74B8C9F82649154B0028785B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74B8C9FA2649154C0028785B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74B8C9FD2649154C0028785B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74B8C9FF2649154C0028785B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F71B314A79E6F8178F50844B /* Pods-LTOGlobalMachineOutliner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTOGlobalMachineOutliner.debug.xcconfig"; path = "Target Support Files/Pods-LTOGlobalMachineOutliner/Pods-LTOGlobalMachineOutliner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEC1D23CA49A38C597D2B1D0 /* libPods-LTOGlobalMachineOutliner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22B418F1500328896E9CBC30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F71B314A79E6F8178F50844B /* Pods-LTOGlobalMachineOutliner.debug.xcconfig */,
+				354AED554208C06474309E14 /* Pods-LTOGlobalMachineOutliner.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		44F0B63946CCFF80404A50B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				513DA019927912A8662D1475 /* libPods-LTOGlobalMachineOutliner.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		74B8C9EA2649154B0028785B = {
 			isa = PBXGroup;
 			children = (
 				74B8C9F52649154B0028785B /* LTOGlobalMachineOutliner */,
 				74B8C9F42649154B0028785B /* Products */,
+				22B418F1500328896E9CBC30 /* Pods */,
+				44F0B63946CCFF80404A50B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74B8CA022649154C0028785B /* Build configuration list for PBXNativeTarget "LTOGlobalMachineOutliner" */;
 			buildPhases = (
+				9FC9534222F48322D67D180F /* [CP] Check Pods Manifest.lock */,
 				74B8C9EF2649154B0028785B /* Sources */,
 				74B8C9F02649154B0028785B /* Frameworks */,
 				74B8C9F12649154B0028785B /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FC9534222F48322D67D180F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LTOGlobalMachineOutliner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74B8C9EF2649154B0028785B /* Sources */ = {
@@ -264,6 +315,7 @@
 		};
 		74B8CA032649154C0028785B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F71B314A79E6F8178F50844B /* Pods-LTOGlobalMachineOutliner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +338,7 @@
 		};
 		74B8CA042649154C0028785B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 354AED554208C06474309E14 /* Pods-LTOGlobalMachineOutliner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
