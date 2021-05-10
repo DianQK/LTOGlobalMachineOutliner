@@ -2,12 +2,13 @@ CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 COMPILER_INDEX_STORE_ENABLE = NO
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa
 ENABLE_BITCODE = NO
+EXCLUDED_ARCHS = armv7
 GCC_OPTIMIZATION_LEVEL = s
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/RxCocoa" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/RxCocoa"
 LLVM_LTO = YES
 OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/RxRelay/RxRelay.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.modulemap"
-OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/RxRelay/RxRelay.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.modulemap" -import-underlying-module -Xcc -fmodule-map-file="${SRCROOT}/${MODULEMAP_FILE}"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/RxRelay/RxRelay.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.modulemap" -import-underlying-module -Xcc -fmodule-map-file="${SRCROOT}/${MODULEMAP_FILE}" -Xfrontend -lto=llvm-full -Xfrontend -emit-bc
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}

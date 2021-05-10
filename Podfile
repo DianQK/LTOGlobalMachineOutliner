@@ -22,6 +22,9 @@ post_install do |installer|
     config.attributes['COMPILER_INDEX_STORE_ENABLE'] =  'NO'
     config.attributes['OTHER_CFLAGS'] ||= '$(inherited)'
     config.attributes['ENABLE_BITCODE'] = 'NO'
+    config.attributes['OTHER_SWIFT_FLAGS'] ||= '$(inherited)'
+    config.attributes['OTHER_SWIFT_FLAGS'] << ' -Xfrontend -lto=llvm-full -Xfrontend -emit-bc'
+    config.attributes['EXCLUDED_ARCHS'] = 'armv7'
     config.save_as(xcconfig_file)
   end
 end
